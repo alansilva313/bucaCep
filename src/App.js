@@ -4,6 +4,7 @@ import { FiSearch } from 'react-icons/fi';
 import './style.css';
 
 import api  from './services/api'
+//teste
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
         <span>Complemento: {cep.complemento}</span>
         <span>{cep.bairro}</span>
         <span>{cep.localidade}</span>
+        
 
       </main>
         )}
