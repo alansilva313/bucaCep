@@ -30,7 +30,7 @@ function App() {
 
 
     }catch{
-          alert('Ops, erro ao buscar')
+          alert('Ops, erro ao buscar o cep digitado, certifique-se de que ele está correto!')
           setInput('')
     }
     
@@ -50,7 +50,7 @@ function App() {
                 <div className="containerInput">
              
                     
-                    <input type="text" name="cep" id="cep" placeholder="Digite seu cep...." value={input} onChange={(e) => setInput(e.target.value)}/>
+                    <input type="text" name="cep" id="cep" placeholder="Digite o cep desejado...." value={input} onChange={(e) => setInput(e.target.value)}/>
                     <button className="buttonSearch" onClick={handleSearch}>
                  <FiSearch size="25" color="#fff"/>
                 </button>
@@ -75,7 +75,7 @@ function App() {
       </main>
         )}
         
-      
+        <p className="viacep">Desenvolvido utilizando a api do viaCep</p>
       
     </div>
   );
